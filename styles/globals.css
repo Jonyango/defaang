@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-input,select{
-	outline:0;
-	border-width: 0 0 1px;
-  border-color: #B4B4C7;
+input,
+select {
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #b4b4c7;
 }

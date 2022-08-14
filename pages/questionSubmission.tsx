@@ -3,16 +3,14 @@ import Head from 'next/head';
 import { QuestionForm } from '../components/questionForm';
 
 const QuestionSubmission: NextPage = () => {
-	return (
-		<main>
-		  <Head>
+  return (
+    <main>
+      <Head>
         <title>Question Submission</title>
       </Head>
-				<QuestionForm/>
-
-		</main>
-		)
-}
-
+      <QuestionForm />
+    </main>
+  );
+};
 
 export default QuestionSubmission;
