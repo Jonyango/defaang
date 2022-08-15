@@ -6,7 +6,6 @@ interface QuestionPost {
 	position?: string;
 	question?: string;
 	category?: string;
-	anonymous?: boolean;
 }
 
 const QuestionForm = () => {
@@ -75,7 +74,7 @@ const QuestionForm = () => {
 							htmlFor='date'
 							className='mt-[0.5rem] mb-2 block text-sm font-medium text-gray-900 dark:text-gray-400'
 						>
-							Date
+							How recently was this question asked? Within the past:
 						</label>
 						<input type='date' id='date' onChange={handleChange} />
 					</div>
@@ -127,13 +126,10 @@ const QuestionForm = () => {
 						<input
 							className='form-check-input checked:bg-[#24245C]focus:outline-none float-left mt-1 mr-2 h-4 w-4 cursor-pointer appearance-none rounded-sm border border-gray-300 bg-white bg-contain bg-center bg-no-repeat align-top transition duration-200 checked:bg-[#24245C] '
 							type='checkbox'
-							id='flexCheckDefault'
+							id='anonymous'
 							onChange={handleChange}
 						/>
-						<label
-							className='form-check-label inline-block text-sm font-medium text-gray-900 '
-							htmlFor='flexCheckDefault'
-						>
+						<label className='form-check-label inline-block text-sm font-medium text-gray-900 ' htmlFor='anonymous'>
 							Stay anonymous
 						</label>
 					</div>
