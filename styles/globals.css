@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+input,
+select,
+textarea {
+	outline: 0;
+	border-width: 0 0 1px;
+	border-color: #b4b4c7;
+}
 .input-field {
 	@apply rounded-md border border-black p-2;
 }
